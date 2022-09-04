@@ -1,0 +1,140 @@
+/* Estilos base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/* Fin estilos base */
+
+/* Header */
+
+.logo {
+    width: 120px;
+    height: 120px;
+    color: black;
+    display: block;
+    background-size: cover;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 125px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000000;
+    background-color: white;
+}
+
+.nav{
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    height: 150px;
+    width:500px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav__menu a:hover{
+    color: steelblue;
+    border-bottom: 3px solid black;
+}
+
+/* Fin de header /*
+
+/* Carousel */
+
+.carousel--mio {
+    background-color: rgb(5, 58, 58);
+    width: auto;
+    margin: auto;
+}
+
+.carousel-inner {
+    height:80vh;
+    background-size: cover;
+    margin: auto;
+}
+
+.carousel-item {
+    width:600px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+     margin: auto;
+}
+
+.carousel__imagen {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* Seccion caracteristicas */
+
+.texto{
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 70px;
+    background-color: white;
+}
+
+.texto h1 {
+    font-weight: bold;
+}
+
+.caracteristicas {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+.caracteristicas__carta {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caracteristicas__imagen {
+    width: 50px;
+    height: 50px;
+}
