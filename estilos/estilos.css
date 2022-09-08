@@ -130,68 +130,60 @@ a {
     height: 50px;
 }
 
-.contenedor__cabanas{
-    width: 100%;
-    height: 50vh;
+.cabanas__contenedor{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.cabanas__opciones{
+.cabanas__titulo h2{
+    font-weight: bold;
+}
+
+.cabanas__titulo{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.cabanas__tarjeta{
     width: 20%;
     height: 40vh;
-    overflow: hidden;
-    position: relative;
+    background-image: url(../imagenes/cabana--exterior.jpg);
     margin: 1.5%;
+    background-size: cover;
+    background-position: center center;
+    transform: scale(1);
+    transition: .5s;
 }
 
-.cabanas__img {
+.cabanas__contenido {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.cabanas__opciones .cabanas__hover{
-    width: 0%;
-    height: 40vh;
-    background-color: rgba(31, 31, 31, 0.372);
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: scale(1);
-    transition: 0.3s ease-in-out;
-}
-
-.cabanas__opciones img{
-    transform: scale(1);
-    transition: 0.3s ease-in-out;
-}
-    
-.cabanas__hover h3 {
-    color: aliceblue;
-    font-size: 2.5em;
-}
-
-.cabanas__hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgba(19, 19, 19, 0.585);
+    opacity: 0;
+    transition: .5s;
+    color: white;
     text-align: center;
 }
 
-.cabanas__opciones:hover img{
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+.cabanas__contenido span{
+    border: solid 2px;
+    padding: 7px;
+    font-weight: bold;
 }
 
-.cabanas__opciones:hover  .cabanas__hover{
-    width: 100%;
+.cabanas__tarjeta:hover .cabanas__contenido{
+    opacity: 1;
+    cursor: pointer;
+}
 
+.cabanas__tarjeta:hover {
+    transform: scale(1.02)
 }
 
 .servicios__container .row{
