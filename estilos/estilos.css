@@ -74,18 +74,32 @@ a {
 
 /* Carousel */
 
-.carousel--mio {
-    background-color: rgb(5, 58, 58);
-    width: auto;
-    margin: auto;
-}
-
 .carousel-inner {
     height:80vh;
     background-size: cover;
+    background-position: center center;
     margin: auto;
 }
 
+
+/* Seccion lead */
+
+.seccion__lead{
+    background-color:darkolivegreen;
+    color: antiquewhite;
+}
+
+.btn-primary{
+    color: black;
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+    
+}
+
+.btn-outline-secondary{
+    border-color: antiquewhite;
+    color: antiquewhite;
+}
 
 /* Seccion caracteristicas */
 
@@ -134,16 +148,20 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    margin: 50px 0;
 }
 
 .cabanas__titulo h2{
     font-weight: bold;
+    color: antiquewhite;
 }
 
 .cabanas__titulo{
     text-align: center;
     padding: 20px;
-    
+    background-color: darkolivegreen;
+    margin-top: 50px;
 }
 
 .cabanas__tarjeta{
@@ -214,6 +232,46 @@ a {
     height: 50px;
     width: 50px;
     padding-bottom: 10px;
+}
+
+
+.ubicacion__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: darkolivegreen;
+}
+
+.ubicacion__titulo h2{
+    font-weight: bold;
+}
+
+.ubicacion__texto {
+    width: 40%;
+    color: antiquewhite;
+}
+
+.contacto__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.contacto__texto p {
+    font-style: italic;
+}
+
+.contacto__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__info h3 {
+    font-weight: bold;
 }
 
 /* Footer */
