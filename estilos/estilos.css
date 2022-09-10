@@ -427,3 +427,35 @@ background-color: white;
     color: black;
     font-size: 1.2rem;
 }
+
+.cabanas__reservar-1{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: white;
+    color: darkolivegreen;
+    border-style: none;
+}
+
+
+
+.cabanas__reservar-1:hover {
+    background-color:rgb(133, 133, 133);
+    color: white;
+    transition:.5s;
+}
+
+.cabanas__reservar-2{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: solid 2px;
+    background-color: darkolivegreen;
+    color: white;
+    border-style: none;
+}
+
+.cabanas__reservar-2:hover {
+    background-color:darkgreen;
+    transition:.5s;
+}
