@@ -135,6 +135,7 @@ a {
 .encabezado__principal button:hover {
     background-color: darkolivegreen;
     border-color: darkolivegreen;
+    transition: ease-in-out .5s;
 }
 
 

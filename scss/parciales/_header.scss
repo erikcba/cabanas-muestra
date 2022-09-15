@@ -1,0 +1,50 @@
+.logo {
+	width: 100px;
+	height: 100px;
+	color: rgba(0, 0, 0, 0.919);
+	display: block;
+	background-size: cover;
+}
+.navegacion {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	z-index: 1000000;
+	background-color: rgba(255, 255, 255, 0.92);
+}
+.nav {
+	align-items: center;
+	justify-content: center;
+	button {
+		padding: 10px;
+		font-weight: bold;
+		font-size: 1rem;
+		border: solid 2px;
+		background-color: darkolivegreen;
+		color: white;
+		border-style: none;
+		&:hover {
+			background-color: darkgreen;
+			transition: .5s;
+		}
+	}
+}
+.nav__menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: auto;
+	height: 100px;
+	width: 500px;
+	font-size: 1rem;
+	a {
+		&:hover {
+			color: black;
+			border-bottom: 2px solid darkolivegreen;
+		}
+	}
+}
+

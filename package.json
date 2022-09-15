@@ -1,0 +1,29 @@
+{
+  "name": "plantilla-1-cabana",
+  "version": "1.0.0",
+  "description": "primera plantilla para cabanas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikcba/cabanas-muestra.git"
+  },
+  "keywords": [
+    "cabanas",
+    "plantilla"
+  ],
+  "author": "Erik Tomaselli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erikcba/cabanas-muestra/issues"
+  },
+  "homepage": "https://github.com/erikcba/cabanas-muestra#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.19"
+  }
+}
