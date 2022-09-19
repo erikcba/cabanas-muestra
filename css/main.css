@@ -119,16 +119,16 @@ a {
 /* Seccion lead */
 .seccion__lead {
   background-color: darkolivegreen;
-  color: antiquewhite; }
+  color: white; }
 
 .btn-primary {
   color: black;
-  background-color: antiquewhite;
-  border-color: antiquewhite; }
+  background-color: white;
+  border-color: white; }
 
 .btn-outline-secondary {
-  border-color: antiquewhite;
-  color: antiquewhite; }
+  border-color: white;
+  color: white; }
 
 /* Seccion caracteristicas */
 .texto {
@@ -433,3 +433,102 @@ a {
 .encabezado__texto__contacto span {
   color: white;
   font-style: italic; }
+
+.contacto__contenedor {
+  background-color: darkolivegreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; }
+
+.contacto__formulario {
+  background-color: black;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  color: white;
+  height: auto;
+  width: 30%; }
+
+.contacto__texto--pagina h3 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.contacto__texto--pagina p {
+  width: 80%;
+  color: white;
+  font-size: 1.2rem;
+  font-style: normal; }
+
+.contacto__formulario--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.contacto__formulario--form h2 {
+  font-weight: bold; }
+
+.formulario__inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+  text-align: left; }
+
+.formulario__inputs__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.formulario__inputs__inner input {
+  background-color: black;
+  border-style: none;
+  border-bottom: solid 2px grey;
+  color: white; }
+
+.formulario__inputs__inner input:focus {
+  border-bottom: solid 2px orange;
+  outline: none; }
+
+.formulario__inputs__inner p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: grey;
+  font-size: 0.9em; }
+
+.contacto__formulario--opciones {
+  width: 100%; }
+
+.contacto__formulario--opciones h3 {
+  margin: 20px;
+  text-align: center; }
+
+.select__cabaña {
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 20px;
+  width: 100%; }
+
+.select__cabaña select {
+  background-color: black;
+  color: grey;
+  border-style: none;
+  border-bottom: solid 2px grey;
+  border-radius: 0; }
+
+.select__cabaña select:focus {
+  border-bottom: solid 2px orange; }
+
+.select__fecha {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
+
+.formulario__boton {
+  width: 70%;
+  padding: 5px;
+  margin-top: 10px; }
