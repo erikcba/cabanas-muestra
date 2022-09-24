@@ -131,4 +131,33 @@
             transition: .5s;
         }
     }
-    
+
+.cabanas__fotos {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: solid 2px white;
+    color: white;
+    background-color: darkolivegreen;
+        &:hover{
+            background-color: darkgreen;
+            color: white;
+            transition: .2s;
+            border-color: darkgreen;
+        }
+}
+
+.cabanas__fotos-2 {
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: solid 2px darkolivegreen;
+    color: darkolivegreen;
+    background-color: white;
+        &:hover{
+            background-color: darkgreen;
+            color: white;
+            transition: .2s;
+            border-color: darkgreen;
+        }
+}

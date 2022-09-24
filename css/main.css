@@ -175,7 +175,7 @@ a {
 
 .cabanas__titulo h2 {
   font-weight: bold;
-  color: antiquewhite; }
+  color: white; }
 
 .cabanas__titulo {
   text-align: center;
@@ -255,7 +255,7 @@ a {
 
 .ubicacion__texto {
   width: 40%;
-  color: antiquewhite; }
+  color: white; }
 
 .contacto__container {
   display: flex;
@@ -405,6 +405,32 @@ a {
     background-color: darkgreen;
     transition: .5s; }
 
+.cabanas__fotos {
+  padding: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: solid 2px white;
+  color: white;
+  background-color: darkolivegreen; }
+  .cabanas__fotos:hover {
+    background-color: darkgreen;
+    color: white;
+    transition: .2s;
+    border-color: darkgreen; }
+
+.cabanas__fotos-2 {
+  padding: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: solid 2px darkolivegreen;
+  color: darkolivegreen;
+  background-color: white; }
+  .cabanas__fotos-2:hover {
+    background-color: darkgreen;
+    color: white;
+    transition: .2s;
+    border-color: darkgreen; }
+
 .encabezado__principal__contacto {
   height: 80vh;
   background-size: cover;
@@ -473,9 +499,14 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%; }
+  .contacto__formulario--form h2 {
+    font-weight: bold; }
 
-.contacto__formulario--form h2 {
-  font-weight: bold; }
+.contacto__formulario--opciones {
+  width: 100%; }
+  .contacto__formulario--opciones h3 {
+    margin: 20px;
+    text-align: center; }
 
 .formulario__inputs {
   display: flex;
@@ -489,52 +520,63 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%; }
+  .formulario__inputs__inner input {
+    background-color: black;
+    border-style: none;
+    border-bottom: solid 2px grey;
+    color: white; }
+    .formulario__inputs__inner input:focus {
+      border-bottom: solid 2px orange;
+      outline: none; }
+  .formulario__inputs__inner p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: grey;
+    font-size: 0.9em; }
 
-.formulario__inputs__inner input {
-  background-color: black;
-  border-style: none;
-  border-bottom: solid 2px grey;
-  color: white; }
-
-.formulario__inputs__inner input:focus {
-  border-bottom: solid 2px orange;
-  outline: none; }
-
-.formulario__inputs__inner p {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  color: grey;
-  font-size: 0.9em; }
-
-.contacto__formulario--opciones {
-  width: 100%; }
-
-.contacto__formulario--opciones h3 {
-  margin: 20px;
-  text-align: center; }
+.formulario__boton {
+  width: 70%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: bold; }
+  .formulario__boton:hover {
+    background-color: darkolivegreen;
+    color: white;
+    transition: ease-in-out .1s; }
 
 .select__cabaña {
   padding: 10px;
   padding-top: 0;
   padding-bottom: 20px;
   width: 100%; }
-
-.select__cabaña select {
-  background-color: black;
-  color: grey;
-  border-style: none;
-  border-bottom: solid 2px grey;
-  border-radius: 0; }
-
-.select__cabaña select:focus {
-  border-bottom: solid 2px orange; }
+  .select__cabaña select {
+    background-color: black;
+    color: grey;
+    border-style: none;
+    border-bottom: solid 2px grey;
+    border-radius: 0; }
+    .select__cabaña select:focus {
+      border-bottom: solid 2px orange; }
 
 .select__fecha {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 10px; }
+  .select__fecha input {
+    border-style: none;
+    width: 50%;
+    text-align: center; }
 
-.formulario__boton {
-  width: 70%;
-  padding: 5px;
-  margin-top: 10px; }
+.contenedor_imagenes__cabaña {
+  background-color: darkolivegreen;
+  padding: 20px; }
+
+.galeria-img {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding: 10px 0; }
