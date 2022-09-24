@@ -25,6 +25,11 @@ a {
   .titulo-seccion h1 {
     font-weight: bold; }
 
+.whatsapp {
+  position: fixed;
+  bottom: 100px;
+  right: 100px; }
+
 .logo {
   width: 100px;
   height: 100px;
@@ -620,10 +625,6 @@ a {
   transform: scale(0);
   transition: transform .3s ease-in-out; }
 
-.light-box img {
-  width: 40vw;
-  height: 50vh; }
-
 .light-box:target {
   transform: scale(1); }
 
@@ -649,3 +650,20 @@ a {
   font-weight: bold;
   text-align: center;
   line-height: 30px; }
+
+.boton__reservar {
+  margin: auto;
+  margin-top: 20px; }
+
+.boton__reservar button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: solid 3px darkolivegreen;
+  color: darkolivegreen;
+  background-color: rgba(250, 5, 54, 0); }
+  .boton__reservar button:hover {
+    background-color: darkolivegreen;
+    border-color: darkolivegreen;
+    color: white;
+    transition: ease-in-out .1s; }
