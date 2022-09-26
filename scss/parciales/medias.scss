@@ -1,0 +1,113 @@
+// Vista tablet
+
+@media screen and (max-width: 1023px) {
+
+    // Home
+    .carousel-item {
+        img {
+            height: 80vh;
+            object-fit: cover;
+        }
+    }
+    .titulo-seccion {
+        h1 {
+            margin: 0;
+        }
+    }
+    .cabanas__contenedor {
+        flex-direction: column;
+    }
+    .cabanas__tarjeta {
+        width: 80%;
+    }
+    .ubicacion__contenido {
+        flex-direction: column;
+    }
+    .ubicacion__mapa {
+        width: 80%;
+        iframe {
+            width: 100%;
+        }
+    }
+    .ubicacion__texto {
+        width: 80%;
+    }
+    
+    .whatsapp{
+        bottom: 50px;
+        right: 50px;
+    }
+
+    // Pagina cabañas
+
+    .opciones__cabanas-contenido {
+        flex-direction: column;
+    }
+
+    .opciones__cabanas-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .opciones__cabanas-texto {
+        width: 90%;
+    }
+
+    .opciones__cabanas-contenido-2 {
+        flex-direction: column;
+    }
+
+    .opciones__cabanas-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .opciones__cabanas-texto-2 {
+        width: 90%;
+    }
+
+    // Pagina contacto
+
+    .encabezado__texto__contacto {
+        text-align: left;
+        width: 95%;
+
+        h1 {
+            text-align: left;
+        }
+    }
+
+    .contacto__contenedor {
+        flex-direction: column;
+    }
+
+    .contacto__formulario {
+        width: 90%;
+    }
+
+    .contacto__texto--pagina {
+        text-align: center;
+        width: 100%;
+    }
+
+    // galeria de fotos de cabañas
+
+    .galeria {
+        grid-template-columns: auto;
+    }
+
+    .light-box {
+        img{
+            height: 100%;
+            width: 80vw;
+            object-fit: none;
+        }
+    }
+
+    .close {
+        top: 220px;
+        right: 100px;
+    }
+}

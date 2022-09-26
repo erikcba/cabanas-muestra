@@ -28,7 +28,8 @@ a {
 .whatsapp {
   position: fixed;
   bottom: 100px;
-  right: 100px; }
+  right: 100px;
+  z-index: 100000; }
 
 .logo {
   width: 100px;
@@ -209,7 +210,8 @@ a {
   opacity: 0;
   transition: .5s;
   color: white;
-  text-align: center; }
+  text-align: center;
+  padding: 20px; }
 
 .cabanas__contenido span {
   border: solid 2px;
@@ -593,23 +595,20 @@ a {
   margin: auto;
   grid-gap: 20px;
   padding: 20px 0; }
-
-.galeria img {
-  height: 350px;
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  vertical-align: top; }
-
-.galeria > a {
-  display: block;
-  position: relative;
-  overflow: hidden; }
-
-.galeria a:hover img {
-  transform: scale(1.05);
-  transition: .5s ease;
-  filter: blur(2px); }
+  .galeria img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    vertical-align: top; }
+  .galeria > a {
+    display: block;
+    position: relative;
+    overflow: hidden; }
+  .galeria a:hover img {
+    transform: scale(1.05);
+    transition: .5s ease;
+    filter: blur(2px); }
 
 .light-box {
   position: fixed;
@@ -623,10 +622,9 @@ a {
   justify-content: center;
   align-items: center;
   transform: scale(0);
-  transition: transform .3s ease-in-out; }
-
-.light-box:target {
-  transform: scale(1); }
+  transition: transform .2s ease-in-out; }
+  .light-box:target {
+    transform: scale(1); }
 
 .close {
   display: block;
@@ -667,3 +665,58 @@ a {
     border-color: darkolivegreen;
     color: white;
     transition: ease-in-out .1s; }
+
+@media screen and (max-width: 1023px) {
+  .carousel-item img {
+    height: 80vh;
+    object-fit: cover; }
+  .titulo-seccion h1 {
+    margin: 0; }
+  .cabanas__contenedor {
+    flex-direction: column; }
+  .cabanas__tarjeta {
+    width: 80%; }
+  .ubicacion__contenido {
+    flex-direction: column; }
+  .ubicacion__mapa {
+    width: 80%; }
+    .ubicacion__mapa iframe {
+      width: 100%; }
+  .ubicacion__texto {
+    width: 80%; }
+  .whatsapp {
+    bottom: 50px;
+    right: 50px; }
+  .opciones__cabanas-contenido {
+    flex-direction: column; }
+  .opciones__cabanas-img img {
+    width: 100%; }
+  .opciones__cabanas-texto {
+    width: 90%; }
+  .opciones__cabanas-contenido-2 {
+    flex-direction: column; }
+  .opciones__cabanas-img img {
+    width: 100%; }
+  .opciones__cabanas-texto-2 {
+    width: 90%; }
+  .encabezado__texto__contacto {
+    text-align: left;
+    width: 95%; }
+    .encabezado__texto__contacto h1 {
+      text-align: left; }
+  .contacto__contenedor {
+    flex-direction: column; }
+  .contacto__formulario {
+    width: 90%; }
+  .contacto__texto--pagina {
+    text-align: center;
+    width: 100%; }
+  .galeria {
+    grid-template-columns: auto; }
+  .light-box img {
+    height: 100%;
+    width: 80vw;
+    object-fit: none; }
+  .close {
+    top: 220px;
+    right: 100px; } }
