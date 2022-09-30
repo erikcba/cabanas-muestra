@@ -747,7 +747,8 @@ a {
     text-align: left;
     height: 100vh;
     gap: 2rem;
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
   .menu__item--oculto {
     display: block; }
     .menu__item--oculto a:hover {
