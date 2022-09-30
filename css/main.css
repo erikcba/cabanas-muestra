@@ -750,9 +750,9 @@ a {
     width: 100%; }
   .menu__item--oculto {
     display: block; }
-  .menu__item--oculto a:hover {
-    border: none;
-    color: crimson; }
+    .menu__item--oculto a:hover {
+      border: none;
+      color: crimson; }
   .header__icono {
     display: block;
     width: 20px;
@@ -783,4 +783,7 @@ a {
   .galeria img {
     height: 20vh; }
   .light-box img {
-    margin: 0; } }
+    object-fit: contain;
+    width: 90vw; }
+  .light-box {
+    display: flex; } }
