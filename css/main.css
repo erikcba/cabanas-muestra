@@ -738,7 +738,7 @@ a {
     width: 70%;
     height: 100vh;
     transition: left 1s; }
-  .nav:target {
+  :target {
     display: block;
     left: 0; }
   .nav__menu {
@@ -746,14 +746,41 @@ a {
     justify-content: center;
     text-align: left;
     height: 100vh;
-    gap: 2rem; }
+    gap: 2rem;
+    width: 100%; }
   .menu__item--oculto {
     display: block; }
+  .menu__item--oculto a:hover {
+    border: none;
+    color: crimson; }
   .header__icono {
-    display: block; }
+    display: block;
+    width: 20px;
+    height: 20px; }
+  .fa-solid {
+    width: 20px;
+    height: 20px;
+    font-size: 25px; }
   .btn-primary {
     width: 100%; }
   .ubicacion__mapa {
     width: 100%; }
   .ubicacion__texto {
-    width: 100%; } }
+    width: 100%; }
+  .whatsapp {
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    width: 50px; }
+  .opciones__cabanas-img img {
+    height: 30vh; }
+  .contacto__contenedor {
+    padding: 50px 20px; }
+  .contacto__texto--pagina p {
+    width: 100%; }
+  .contacto__formulario {
+    width: 100%; }
+  .galeria img {
+    height: 20vh; }
+  .light-box img {
+    margin: 0; } }
